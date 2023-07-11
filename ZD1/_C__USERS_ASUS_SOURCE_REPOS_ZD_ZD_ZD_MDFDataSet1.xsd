@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="_C__USERS_ASUS_SOURCE_REPOS_ZD_ZD_ZD_MDFDataSet1" targetNamespace="http://tempuri.org/_C__USERS_ASUS_SOURCE_REPOS_ZD_ZD_ZD_MDFDataSet1.xsd" xmlns:mstns="http://tempuri.org/_C__USERS_ASUS_SOURCE_REPOS_ZD_ZD_ZD_MDFDataSet1.xsd" xmlns="http://tempuri.org/_C__USERS_ASUS_SOURCE_REPOS_ZD_ZD_ZD_MDFDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="C__USERS_ASUS_SOURCE_REPOS_ZD_ZD_ZD_MDFConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="C__USERS_ASUS_SOURCE_REPOS_ZD_ZD_ZD_MDFConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.ZD1.Properties.Settings.GlobalReference.Default.C__USERS_ASUS_SOURCE_REPOS_ZD_ZD_ZD_MDFConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VagonTableAdapter" GeneratorDataComponentClassName="VagonTableAdapter" Name="Vagon" UserDataComponentName="VagonTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="C__USERS_ASUS_SOURCE_REPOS_ZD_ZD_ZD_MDFConnectionString (Settings)" DbObjectName="[C:\USERS\ASUS\SOURCE\REPOS\ZD\ZD\ZD.MDF].dbo.Vagon" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT VagonNumber FROM dbo.Vagon</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="VagonNumber" DataSetColumn="VagonNumber" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="_C__USERS_ASUS_SOURCE_REPOS_ZD_ZD_ZD_MDFDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="_C__USERS_ASUS_SOURCE_REPOS_ZD_ZD_ZD_MDFDataSet1" msprop:Generator_DataSetName="_C__USERS_ASUS_SOURCE_REPOS_ZD_ZD_ZD_MDFDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Vagon" msprop:Generator_RowEvHandlerName="VagonRowChangeEventHandler" msprop:Generator_RowDeletedName="VagonRowDeleted" msprop:Generator_RowDeletingName="VagonRowDeleting" msprop:Generator_RowEvArgName="VagonRowChangeEvent" msprop:Generator_TablePropName="Vagon" msprop:Generator_RowChangedName="VagonRowChanged" msprop:Generator_RowChangingName="VagonRowChanging" msprop:Generator_TableClassName="VagonDataTable" msprop:Generator_RowClassName="VagonRow" msprop:Generator_TableVarName="tableVagon" msprop:Generator_UserTableName="Vagon">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="VagonNumber" msprop:Generator_ColumnPropNameInRow="VagonNumber" msprop:Generator_ColumnPropNameInTable="VagonNumberColumn" msprop:Generator_ColumnVarNameInTable="columnVagonNumber" msprop:Generator_UserColumnName="VagonNumber" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

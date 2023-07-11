@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5B34C8D7-A594-46C7-91AF-CC5B4584C072}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ZD1</RootNamespace>
+    <AssemblyName>ZD1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataGruz.cs" />
+    <Compile Include="DataResipient.cs" />
+    <Compile Include="DataSender.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gruz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gruz.Designer.cs">
+      <DependentUpon>Gruz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recipient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recipient.Designer.cs">
+      <DependentUpon>Recipient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sender.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sender.Designer.cs">
+      <DependentUpon>Sender.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vagon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vagon.Designer.cs">
+      <DependentUpon>Vagon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View.Designer.cs">
+      <DependentUpon>View.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zakaz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zakaz.Designer.cs">
+      <DependentUpon>Zakaz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_C__USERS_ASUS_SOURCE_REPOS_ZD_ZD_ZD_MDFDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_C__USERS_ASUS_SOURCE_REPOS_ZD_ZD_ZD_MDFDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_C__USERS_ASUS_SOURCE_REPOS_ZD_ZD_ZD_MDFDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_C__USERS_ASUS_SOURCE_REPOS_ZD_ZD_ZD_MDFDataSet1.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gruz.resx">
+      <DependentUpon>Gruz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Recipient.resx">
+      <DependentUpon>Recipient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sender.resx">
+      <DependentUpon>Sender.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vagon.resx">
+      <DependentUpon>Vagon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View.resx">
+      <DependentUpon>View.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zakaz.resx">
+      <DependentUpon>Zakaz.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="_C__USERS_ASUS_SOURCE_REPOS_ZD_ZD_ZD_MDFDataSet.xsc">
+      <DependentUpon>_C__USERS_ASUS_SOURCE_REPOS_ZD_ZD_ZD_MDFDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_C__USERS_ASUS_SOURCE_REPOS_ZD_ZD_ZD_MDFDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_C__USERS_ASUS_SOURCE_REPOS_ZD_ZD_ZD_MDFDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_C__USERS_ASUS_SOURCE_REPOS_ZD_ZD_ZD_MDFDataSet.xss">
+      <DependentUpon>_C__USERS_ASUS_SOURCE_REPOS_ZD_ZD_ZD_MDFDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_C__USERS_ASUS_SOURCE_REPOS_ZD_ZD_ZD_MDFDataSet1.xsc">
+      <DependentUpon>_C__USERS_ASUS_SOURCE_REPOS_ZD_ZD_ZD_MDFDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="_C__USERS_ASUS_SOURCE_REPOS_ZD_ZD_ZD_MDFDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_C__USERS_ASUS_SOURCE_REPOS_ZD_ZD_ZD_MDFDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_C__USERS_ASUS_SOURCE_REPOS_ZD_ZD_ZD_MDFDataSet1.xss">
+      <DependentUpon>_C__USERS_ASUS_SOURCE_REPOS_ZD_ZD_ZD_MDFDataSet1.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
